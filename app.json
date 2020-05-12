@@ -1,14 +1,55 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "大哈克严选",
-    "navigationBarTextStyle":"black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/index/index",
+        "pages/category/index",
+        "pages/cart/index",
+        "pages/user/index",
+        "pages/goods_list/index",
+        "pages/goods_detail/index",
+        "pages/collect/index",
+        "pages/search/index",
+        "pages/feedback/index",
+        "pages/login/index",
+        "pages/auth/index",
+        "pages/pay/index",
+        "pages/order/index",
+        "styles"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#d81e06",
+        "navigationBarTitleText": "哈克严选",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#707070",
+        "selectedColor": "#d81e06",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "./icons/home.png",
+                "selectedIconPath": "./icons/home_active.png"
+            },
+            {
+                "pagePath": "pages/category/index",
+                "text": "分类",
+                "iconPath": "./icons/category.png",
+                "selectedIconPath": "./icons/category_active.png"
+            },
+            {
+                "pagePath": "pages/cart/index",
+                "text": "购物车",
+                "iconPath": "./icons/cart.png",
+                "selectedIconPath": "./icons/cart _active.png"
+            },
+            {
+                "pagePath": "pages/user/index",
+                "text": "我的",
+                "iconPath": "./icons/my.png",
+                "selectedIconPath": "./icons/my_active.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }
