@@ -1,3 +1,40 @@
 <view class="hake_index">
+<!-- 搜索栏组件 -->
     <searchInput></searchInput>
+
+    <!-- 轮播图 -->
+    <view>
+        <swiper class="index_swiper" interval="3000" indicator-dots indicator-color autoplay circular indicator-active-color="#d81e06">
+            <swiper-item class="" wx:for="{{swiperList}}" wx:key="goods_id">
+                <navigator url="{{item.navigator_url}}">
+                <image class="swiper_image" src="{{item.image_src}}" mode="widthFix" />
+                </navigator>
+            </swiper-item>        
+        </swiper>       
+    </view>
+
+    <!-- 导航分类 -->
+    <view class="index_cate">
+        <navigator wx:for="{{cateList}}" wx:key="name" >
+            <image class="cate_image" src="{{item.image_src}}" mode="widthFix"  />   
+        </navigator>     
+    </view>
+      
+      <!-- 楼层 -->
+      <view class="index_floor">
+          <view class="floor_group" wx:for="{{floorData}}" wx:key="name"
+           wx:for-item="item1" wx:for-index="index1">
+              <view class="floor_title">
+                  <image src="{{item1.floor_title.image_src}}" mode="widthFix" />              
+              </view>
+                <view class="floor_list">
+                    <navigator  wx:for="{{item1.product_list}}" 
+                    wx:for-item="item2"wx:for-index="index2" wx:key="name">
+                        <image src="{{item2.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}"></image>
+                    </navigator>       
+                </view>      
+          </view>  
+      </view>
+        
+      
 </view>
