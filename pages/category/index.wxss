@@ -1,1 +1,65 @@
-/* pages/category/index.wxss */
+.page {
+    height: 100%;
+}
+
+.category {
+    height: 100%;
+}
+
+.category_container {
+    /* 可滚动区域是总高度减去搜索栏高度 */
+    height: calc(100vh - 94rpx);
+    display: flex;
+}
+
+.category_container .catesLeft {
+    flex: 2;
+}
+
+.cates_title {
+    padding: 20rpx 0;
+    text-align: center;
+    border-bottom: 2rpx solid rgb(219, 219, 219);
+}
+
+/* 文字选中时状态 */
+.active {
+    color: #d81e06;
+    border-left: 5rpx solid #d81e06;
+}
+
+.category_container .catesRight {
+    flex: 5;
+}
+
+
+
+.cates_index .catesRight_title {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 80rpx;
+    font-size: 30rpx;
+}
+
+.catesRight_title .del {
+    color: #ccc;
+    padding: 0 10rpx;
+}
+
+.cates_list {
+    /* 外层是一个伸缩盒子 */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cates_list navigator {
+    /* 每个链接宽度占33.33% */
+    width: 33.33%;
+    text-align: center;
+    padding: 15rpx 0;
+}
+
+.cates_list navigator image {
+    width: 50%;
+}

@@ -3,7 +3,6 @@
   background-color: var(--themeColor);
   padding: 10rpx;
 }
-
 .search_view navigator {
   display: flex;
   justify-items: center;
@@ -11,5 +10,4 @@
   background-color: #fff;
   border-radius: 15rpx;
   height: 100%;
-  /*继承父元素的高度 */
 }
