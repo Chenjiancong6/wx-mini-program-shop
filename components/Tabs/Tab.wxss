@@ -1,0 +1,20 @@
+/* components/Tabs/Tab.wxss */
+
+.tab_title {
+    display: flex;
+    padding: 15rpx 0;
+    font-size: 35rpx;
+}
+
+.tab .tab_item {
+    /*使文字等份居中  */
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    justify-items: center;
+}
+
+.active {
+    color: var(--themeColor);
+    border-bottom: 5rpx solid currentColor;
+}

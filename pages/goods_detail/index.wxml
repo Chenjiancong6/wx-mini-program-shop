@@ -1,2 +1,7 @@
-<!--pages/goods_detail/index.wxml-->
-<text>pages/goods_detail/index.wxml</text>
+<view class="detail_swiper">
+    <swiper interval="3000" indicator-dots indicator-color autoplay circular indicator-active-color="#d81e06">
+        <swiper-item wx:for="{{goodsDetail.pics}}" wx:key="pics_id">
+            <image class="image_swiper" mode="widthFix" src="{{item.pics_big}}"></image>
+        </swiper-item>
+    </swiper>
+</view>

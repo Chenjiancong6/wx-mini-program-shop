@@ -1,8 +1,10 @@
 <view class="category">
     <searchInput class="searchInput"></searchInput>
 
-    <!-- 分类菜单左右栏 -->
+
     <view class="category_container">
+
+        <!-- 分类菜单左右栏 -->
         <scroll-view class="catesLeft" scroll-y>
             <view class="cates_title {{index===currentIndex?'active':''}}" wx:for="{{catesLeft}}" wx:key="cat_id"
                 bind:tap="itemChange" data-index="{{index}}"> {{item}} </view>
@@ -17,7 +19,8 @@
                     <text class="del">/</text>
                 </view>
                 <view class="cates_list">
-                    <navigator wx:for="{{item1.children}}" wx:for-item="item2" wx:for-index="index2" wx:key="cat_id">
+                    <navigator url="/pages/goods_list/index?cid={{item2.cat_id}}" wx:for="{{item1.children}}"
+                        wx:for-item="item2" wx:for-index="index2" wx:key="cat_id">
                         <image class="" src="{{item2.cat_icon}}" mode="widthFix" lazy-load="true" />
                         <view class="content_title">{{item2.cat_name}}</view>
                     </navigator>

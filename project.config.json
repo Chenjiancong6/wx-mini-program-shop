@@ -74,6 +74,21 @@
 					"id": -1,
 					"name": "pages category/index",
 					"pathName": "pages/category/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "商品列表",
+					"pathName": "pages/goods_list/index",
+					"query": "cid=5",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "商品详情",
+					"pathName": "pages/goods_detail/index",
+					"query": "goods_id=55178",
 					"scene": null
 				}
 			]

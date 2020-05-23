@@ -14,18 +14,20 @@
 
 .category_container .catesLeft {
     flex: 2;
+    background-color: #f6f6f6;
 }
 
 .cates_title {
     padding: 20rpx 0;
     text-align: center;
-    border-bottom: 2rpx solid rgb(219, 219, 219);
+    /* border-bottom: 2rpx solid rgb(219, 219, 219); */
 }
 
 /* 文字选中时状态 */
 .active {
     color: #d81e06;
     border-left: 5rpx solid #d81e06;
+    background-color: white
 }
 
 .category_container .catesRight {

@@ -1,1 +1,39 @@
 /* pages/goods_list/index.wxss */
+
+.first_tab .goods_item {
+    display: flex;
+    border-bottom: 2rpx solid #ccc;
+}
+
+.first_tab .goods_image {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 10rpx 0;
+}
+
+.first_tab .goods_image image {
+    width: 60%;
+}
+
+.first_tab .goods_info {
+    flex: 3;
+    /* 空白环绕，让价格和商品信息参生间隔 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.goods_info .info_title {
+    /* 文字两行显示，超出部分隐藏 */
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.goods_info .info_price {
+    color: var(--themeColor);
+    font-size: 35rpx;
+}
