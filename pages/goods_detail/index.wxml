@@ -1,7 +1,55 @@
-<view class="detail_swiper">
-    <swiper interval="3000" indicator-dots indicator-color autoplay circular indicator-active-color="#d81e06">
-        <swiper-item wx:for="{{goodsDetail.pics}}" wx:key="pics_id">
-            <image class="image_swiper" mode="widthFix" src="{{item.pics_big}}"></image>
-        </swiper-item>
-    </swiper>
+<view class="detail_page">
+
+    <view class="detail_swiper">
+        <swiper interval="3000" indicator-dots indicator-color autoplay circular indicator-active-color="#d81e06">
+            <swiper-item bindtap="handlePreviewImage" data-url="{{item.pics_big}}" wx:for="{{goodsDetail.pics}}"
+                wx:key="pics_id">
+                <image class="image_swiper" mode="widthFix" src="{{item.pics_big}}"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+
+    <!-- 商品信息和收藏 -->
+    <view class="detail_info">
+        <view class="price">￥{{goodsDetail.goods_price}} </view>
+        <view class="price_info">
+            <view class="info">{{goodsDetail.goods_name}} </view>
+            <view class="detail_collect">
+                <text class="iconfont icon-collect"> </text>
+                <view> 收藏 </view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 图文详情 -->
+    <view class="goods_info">
+        <view class="goods_title"> 图文详情</view>
+        <view class="goods_title_content">
+            <!-- 富文本标签 -->
+            <rich-text class="" nodes="{{goodsDetail.goods_introduce}}" />
+        </view>
+    </view>
+
+    <!-- 底部按钮 -->
+    <view class="btn_tool">
+        <view class="btn_item">
+            <view class="iconfont icon-kefu"></view>
+            <view>客服</view>
+            <button open-type="contact"></button>
+        </view>
+        <view class="btn_item">
+            <view class="iconfont icon-ziyuan"></view>
+            <view>分享</view>
+            <button open-type="share"></button>
+        </view>
+        <view class="btn_item">
+            <navigator url="/pages/cart/index" open-type="switchTab">
+                <view class="iconfont icon-gouwuche"></view>
+                <view>购物车</view>
+            </navigator>
+        </view>
+        <view class="btn_item btn_shop" bindtap="handleCartAdd">加入购物车</view>
+        <view class="btn_item btn_buy" >立即购买</view>
+    </view>
+
 </view>

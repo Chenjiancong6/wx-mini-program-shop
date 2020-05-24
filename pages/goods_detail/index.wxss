@@ -2,6 +2,10 @@
     height: 80%;
 }
 
+.detail_page {
+    background: rgb(211, 206, 206);
+}
+
 .detail_swiper swiper {
     /* height: 60vw; */
     height: 400rpx;
@@ -12,4 +16,108 @@
 .detail_swiper .image_swiper {
     width: 100%;
 
+}
+
+.price_info {
+    display: flex;
+    background-color: white;
+}
+
+.detail_info .price {
+    padding: 15rpx;
+    font-size: 32rpx;
+    font-weight: 600;
+    color: var(--themeColor);
+    background-color: white;
+}
+
+.price_info .info {
+    flex: 5;
+    color: #000;
+    font-size: 30rpx;
+    padding: 0 10px;
+    /* 文字两行显示，超出部分隐藏 */
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.detail_info .detail_collect {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    border-left: 1px solid #000;
+    padding-left: 40rpx;
+}
+
+.goods_info {
+    background-color: white;
+}
+
+.goods_info .goods_title {
+    font-size: 32rpx;
+    color: var(--themeColor);
+    font-weight: 600;
+    margin: 20rpx 0;
+    padding: 20rpx;
+}
+
+.btn_tool {
+    border-top: 1px solid #ccc;
+    display: flex;
+    background-color: white;
+    position: fixed;
+    /*固定定位*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90rpx;
+    background-color: #fff;
+
+}
+
+.btn_tool .btn_item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.btn_item button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.btn_tool .btn_shop {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    background-color: #ffa500;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 600;
+}
+
+.btn_tool .btn_buy {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    background-color: #ed4450;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 600;
 }
