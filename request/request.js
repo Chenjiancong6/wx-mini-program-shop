@@ -26,7 +26,6 @@ export const request = (params) => {
                     //当数据出来后，隐藏加载图标
                     wx.hideLoading();
                 }
-
             }
         })
     })

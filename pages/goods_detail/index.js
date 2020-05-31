@@ -13,7 +13,7 @@ Page({
         goodsDetail: []
     },
 
-    //存放请求后返回的数据，用于展示预览图片
+    //存放请求后返回的数据，用于展示预览图片和购物车数据
     goodsInfo: [],
 
     /**
@@ -54,13 +54,16 @@ Page({
         if (index === -1) {
             //没有存在数组中，第一次添加
             this.goodsInfo.num = 1;
+
+            //商品在购物车选中时转态
+            this.goodsInfo.checked = true;
             //把商品加入到购物车
             cart.push(this.goodsInfo)
         } else {
             //已经在购物车添加过了
             cart[index].num++;
         }
-        //把购物车重新添加到缓存数据中
+        //把购物车添加到缓存数据中
         wx.setStorageSync("cart", cart);
 
         //设置弹窗

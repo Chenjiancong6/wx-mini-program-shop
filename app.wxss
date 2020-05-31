@@ -1,4 +1,4 @@
-@import "./icons/iconfont.wxss"
+@import "./icons/iconfont.wxss";
 
 /**初始化样式**/
 page,
