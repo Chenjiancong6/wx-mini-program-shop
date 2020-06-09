@@ -1,1 +1,3 @@
-/* pages/login/index.wxss */
+.login_btn {
+    margin: 40rpx;
+}

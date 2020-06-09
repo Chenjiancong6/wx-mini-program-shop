@@ -10,10 +10,15 @@ page {
     width: 60%;
 }
 
+.address_raw {
+    border-bottom: 1px solid #d81e06;
+}
+
 .address_Info_raw {
     display: flex;
     padding: 20rpx;
     font-size: 29rpx;
+    margin-bottom: 30rpx;
 }
 
 .address_Info_raw .address_Info {

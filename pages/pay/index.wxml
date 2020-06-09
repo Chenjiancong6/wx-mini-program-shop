@@ -1,2 +1,59 @@
-<!--pages/pay/index.wxml-->
-<text>pages/pay/index.wxml</text>
+<view class="address_raw">
+    <!-- 地址信息 -->
+    <view class="address_Info_raw">
+        <view class="address_Info">
+            <view>{{address.userName}}</view>
+            <view>{{address.provinceName+address.cityName+address.countyName+address.detailInfo}}</view>
+        </view>
+        <view class="address_phone">
+            <view>{{address.telNumber}}</view>
+        </view>
+    </view>
+</view>
+
+<!-- 购物车商品展示 -->
+<view class="cart_index">
+    <!-- 店铺标题 -->
+    <view class="cart_title">已选中商品</view>
+    <!-- 一个购物车数据 -->
+
+    <view class="cart_item" wx:for="{{cart}}" wx:key="goods_id">
+
+        <!-- 购物车内容 -->
+        <view class="cart_content">
+
+            <!-- 中间 -->
+            <view class="cart_img">
+                <image class="" src="{{item.goods_small_logo}}" mode="widthFix" />
+            </view>
+            <!-- 右边 -->
+            <view class="cart_item_content">
+                <view class="cart_item_title">{{item.goods_name}}</view>
+                <view class="cart_price_number">
+                    <view class="cart_price">￥{{item.goods_price}}</view>
+                    <view class="cart_number">
+                        <view class="cart_num">x {{item.num}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<!-- 
+    //底部工具栏
+ -->
+<view class="footer_tool">
+
+    <!-- 计算总价 -->
+    <view class="footer_calc">
+        <view class="footer_calc_price">
+            合计：<text>￥{{totalPrice}}</text>
+        </view>
+        <view class="price_info">包含运费</view>
+    </view>
+    <!--  支付 -->
+    <view class="footer_pay" bindtap="handlePay">
+        支付({{totalNum}})
+    </view>
+</view>

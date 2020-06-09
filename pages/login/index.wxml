@@ -1,2 +1,5 @@
-<!--pages/login/index.wxml-->
-<text>pages/login/index.wxml</text>
+<button type="primary" plain class="login_btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+
+<view>
+    <image src="http://t9.baidu.com/it/u=2849247440,56223062&fm=193" mode="widthFix" />
+</view>

@@ -76,7 +76,6 @@ Page({
 
             //关闭下拉刷新的窗口
             wx.stopPullDownRefresh();
-
         })
 
     },
@@ -137,7 +136,7 @@ Page({
         //当前的页数大于等于总的页数，没有下一页数据了
         if (this.queryParams.pagenum >= this.totalPages) {
             wx.showToast({
-                title: '没有下一页数据了',
+                title: '商品已经到底部了',
             });
         } else {
             //如果有数据，页数+1，发送数据
@@ -146,10 +145,5 @@ Page({
         }
     },
 
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage: function () {
 
-    }
 })

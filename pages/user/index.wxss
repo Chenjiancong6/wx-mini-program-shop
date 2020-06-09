@@ -1,1 +1,143 @@
-/* pages/user/index.wxss */
+page {
+    background-color: #edece8;
+}
+
+.user_login {
+    display: flex;
+    background-color: rgb(190, 233, 186);
+    height: 300rpx;
+}
+
+.user_login .user_avatar {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_login .user_avatar image {
+    width: 130rpx;
+    height: 130rpx;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: rgb(220, 230, 228);
+
+}
+
+.user_login .go_login {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 170rpx;
+}
+
+/* 内容区 */
+.user_content {
+    position: relative;
+    color: #666;
+    padding-bottom: 100rpx;
+}
+
+.user_content .user_main {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    /*  left: 50%;后，使用 translateX(-50%)让它回来到原来的位置 */
+    top: -40rpx;
+}
+
+.history_wrap {
+    display: flex;
+    background-color: #fff;
+}
+
+.history_wrap navigator {
+    flex: 1;
+    text-align: center;
+    padding: 10rpx 0;
+}
+
+.history_wrap .his_num {
+    color: var(--themeColor);
+}
+
+/* 订单模块 */
+.user_order {
+    background-color: #fff;
+    margin-top: 20rpx;
+}
+
+.user_order .order_item {
+    display: flex;
+}
+
+.user_order .order_title {
+    border-bottom: 1px solid #ccc;
+    padding: 15rpx;
+}
+
+.user_order .order_item navigator {
+    flex: 1;
+    text-align: center;
+}
+
+.user_order .order_item {
+    padding: 15rpx;
+}
+
+.user_order .order_item .order_icon {
+    color: var(--themeColor);
+    font-size: 50rpx;
+}
+
+.address_wrap {
+    background-color: #fff;
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: space-between;
+    /* 把两边左右分开 */
+    padding: 20rpx;
+}
+
+.app_info_wrap {
+    background-color: #fff;
+    margin-top: 20rpx;
+}
+
+.app_info_wrap .app_info_item {
+    display: flex;
+    justify-content: space-between;
+    /* 把两边左右分开*/
+    border-bottom: 1px solid #ccc;
+    padding: 20rpx;
+
+}
+
+.app_info_item .app_contact {
+    width: 120rpx;
+    height: 55rpx;
+    font-size: 28rpx;
+    text-align: center;
+    color: #666;
+    margin-right: 60rpx;
+}
+
+.app_recommend_wrap {
+    background-color: #fff;
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: space-between;
+    /* 把两边左右分开 */
+    padding: 20rpx;
+}
+
+.app_recommend_wrap button {
+    width: 280rpx;
+    height: 55rpx;
+    font-size: 28rpx;
+    text-align: center;
+    color: #666;
+    margin-left: 60rpx;
+}

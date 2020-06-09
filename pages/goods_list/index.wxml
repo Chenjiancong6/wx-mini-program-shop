@@ -20,6 +20,6 @@
         </view>
 
     </block>
-    <block wx:elif="{{tabList[1].isActive}}">2</block>
-    <block wx:elif="{{tabList[2].isActive}}">3</block>
+    <block wx:elif="{{tabList[1].isActive}}">模块开发中</block>
+    <block wx:elif="{{tabList[2].isActive}}">模块开发中...</block>
 </Tab>

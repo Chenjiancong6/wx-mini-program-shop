@@ -54,7 +54,7 @@
         </view>
     </block>
     <block wx:else>
-        <image class="" src="http://ku.90sjimg.com/element_origin_min_pic/17/05/23/0d2019a7ca7937adaf34a3b15fd7b92e.jpg"
+        <image src="http://ku.90sjimg.com/element_origin_min_pic/17/05/23/0d2019a7ca7937adaf34a3b15fd7b92e.jpg"
             mode="widthFix" />
     </block>
 

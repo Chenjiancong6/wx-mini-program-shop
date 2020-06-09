@@ -1,1 +1,140 @@
-/* pages/pay/index.wxss */
+page {
+    padding-bottom: 90rpx;
+}
+
+.address_raw {
+    border-bottom: 1px solid #d81e06;
+}
+
+.address_Info_raw {
+    display: flex;
+    padding: 20rpx;
+    font-size: 29rpx;
+    margin-bottom: 30rpx;
+}
+
+.address_Info_raw .address_Info {
+    flex: 5;
+}
+
+.address_Info_raw .address_phone {
+    flex: 3;
+    text-align: right;
+}
+
+
+
+/* 
+*下面是购物车的样式 
+*/
+.cart_index {
+    padding-top: 20rpx;
+}
+
+.cart_title {
+    padding: 20rpx;
+    font-size: 32rpx;
+    font-weight: 600;
+    border-bottom: 1rpx solid #ccc;
+    color: var(--themeColor);
+}
+
+.cart_item .cart_content {
+    display: flex;
+    border-bottom: 1rpx solid #ccc;
+    padding: 20rpx;
+}
+
+
+.cart_content .cart_img {
+    flex: 3;
+}
+
+.cart_content .cart_img image {
+    width: 80%;
+}
+
+.cart_content .cart_item_content {
+    flex: 5;
+    /* 空白环绕 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cart_item_content .cart_item_title {
+    /* 文字两行显示，超出部分隐藏 */
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.cart_price_number {
+    display: flex;
+}
+
+.cart_price_number .cart_price {
+    flex: 1;
+    font-size: 32rpx;
+    font-weight: 600;
+    color: var(--themeColor);
+}
+
+.cart_price_number .cart_number {
+    flex: 1;
+    display: flex;
+}
+
+
+
+.cart_num {
+    width: 55rpx;
+    height: 55rpx;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    font-size: 32rpx;
+    font-weight: 600;
+}
+
+/* 
+*下面是底部结算按钮工具栏的样式 
+*/
+
+.footer_tool {
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 90rpx;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+
+.footer_tool .footer_calc {
+    flex: 4;
+    text-align: right;
+    padding-right: 20rpx;
+    font-size: 28rpx;
+}
+
+.footer_calc_price text {
+    color: var(--themeColor);
+    font-size: 32rpx;
+    font-weight: 600;
+}
+
+.footer_tool .footer_pay {
+    flex: 3;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--themeColor);
+    color: white;
+    font-size: 32rpx;
+    font-weight: 600;
+}

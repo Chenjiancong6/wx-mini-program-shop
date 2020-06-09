@@ -50,7 +50,18 @@
     justify-items: center;
     flex-direction: column;
     border-left: 1px solid #000;
-    padding-left: 40rpx;
+    padding-left: 20rpx;
+}
+
+.iconfont,
+.collect_title {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.icon-shoucang {
+    color: var(--themeColor);
 }
 
 .goods_info {
