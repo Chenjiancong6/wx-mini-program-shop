@@ -1,2 +1,30 @@
-<!--pages/search/index.wxml-->
-<text>pages/search/index.wxml</text>
+<view class="search_raw">
+    <input value="{{inpValue}}" type="text" bindinput="handleInput" placeholder="请输入你想要搜索的商品" />
+    <button hidden="{{!isFocus}}" bindtap="handleCancel">取消</button>
+</view>
+<view class="search_content">
+    <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" class="search_content_item" wx:for="{{goods}}"
+        wx:key="goods_id">
+        {{item.goods_name}}
+    </navigator>
+</view>
+
+
+<!-- 推荐的商品 -->
+<view class="tro_title">全网热榜:</view>
+<view class="first_tab">
+    <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" class="goods_item" wx:for="{{goods_list}}"
+        wx:key="goods_id">
+        <!-- 左边图片 -->
+        <view class="goods_image">
+            <image
+                src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}"
+                mode="widthFix" />
+        </view>
+        <!-- 右边商品信息 -->
+        <view class="goods_info">
+            <view class="info_title">{{item.goods_name}}</view>
+            <view class="info_price">￥{{item.goods_price}}</view>
+        </view>
+    </navigator>
+</view>

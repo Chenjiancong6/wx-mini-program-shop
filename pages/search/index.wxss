@@ -1,1 +1,94 @@
-/* pages/search/index.wxss */
+page {
+    background-color: #dedede;
+    padding: 20rpx;
+
+}
+
+.search_raw {
+    display: flex;
+    height: 70rpx;
+}
+
+.search_raw input {
+    flex: 1;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10rpx;
+    padding-left: 20rpx;
+}
+
+.search_raw button {
+    width: 120rpx;
+    height: 100%;
+    font-size: 28rpx;
+    padding: 0;
+    margin-left: 20rpx;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.search_content {
+    margin-top: 30rpx;
+}
+
+.search_content .search_content_item {
+    border-bottom: 1px solid #ccc;
+    padding: 15rpx 10px;
+    font-size: 26rpx;
+    background-color: #fff;
+    /* 内容一行显示 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 推荐的商品 */
+.first_tab .goods_item {
+    display: flex;
+    border-bottom: 2rpx solid #ccc;
+    background-color: #fff;
+}
+
+.first_tab {
+    margin-top: 20rpx;
+}
+
+.first_tab .goods_image {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 10rpx 0;
+}
+
+.first_tab .goods_image image {
+    width: 60%;
+}
+
+.first_tab .goods_info {
+    flex: 3;
+    /* 空白环绕，让价格和商品信息参生间隔 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.goods_info .info_title {
+    /* 文字两行显示，超出部分隐藏 */
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.goods_info .info_price {
+    color: var(--themeColor);
+    font-size: 35rpx;
+}
+
+.tro_title {
+    margin: 30rpx 0;
+    color: var(--themeColor);
+    font-size: 32rpx;
+}

@@ -116,6 +116,13 @@
 					"id": -1,
 					"name": "收藏",
 					"pathName": "pages/collect/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/search/index",
 					"scene": null
 				}
 			]
