@@ -1,1 +1,69 @@
-/* pages/feedback/index.wxss */
+page {
+    background-color: #dedede;
+}
+
+.feedback_raw {
+    color: #666;
+    padding: 20rpx;
+}
+
+.feedback_raw .feedback_tips text {
+    background-color: #fff;
+    width: 30%;
+    padding: 10rpx;
+    text-align: center;
+    margin: 20rpx 10rpx;
+}
+
+.feedback_raw .feedback_tips {
+    display: flex;
+    /* 自动换行 */
+    flex-wrap: wrap;
+}
+
+.feedback_content {
+    background-color: #fff;
+    margin-top: 20rpx;
+}
+
+.feedback_content textarea {
+    padding: 20rpx 0 0 10rpx;
+}
+
+.feedback_content .feedback_tool {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.feedback_tool button {
+    margin: 0;
+    width: 90rpx;
+    height: 90rpx;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 40rpx;
+    font-weight: bold;
+    margin-left: 20rpx;
+    margin-bottom: 20rpx;
+    padding: 0;
+    color: #ccc;
+}
+
+.feedback_upImg_item {
+    margin-left: 20rpx;
+}
+
+.from_btn {
+    margin-top: 20rpx;
+    display: flex;
+    /* 从右边向左边对齐 */
+    justify-content: flex-end;
+}
+
+.from_btn button {
+    width: 30%;
+    margin: 0;
+    font-size: 32rpx;
+}

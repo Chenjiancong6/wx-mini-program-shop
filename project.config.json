@@ -123,6 +123,13 @@
 					"id": -1,
 					"name": "搜索",
 					"pathName": "pages/search/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "意见反馈",
+					"pathName": "pages/feedback/index",
 					"scene": null
 				}
 			]

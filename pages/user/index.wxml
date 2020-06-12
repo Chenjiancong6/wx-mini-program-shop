@@ -77,10 +77,12 @@
                     <text>联系客服</text>
                     <button class="app_contact" open-type="contact" bindcontact="handleContact">私信</button>
                 </view>
-                <view class="app_info_item">
-                    <text>意见反馈</text>
-                    <text>></text>
-                </view>
+                <navigator class="" url="/pages/feedback/index">
+                    <view class="app_info_item">
+                        <text>意见反馈</text>
+                        <text>></text>
+                    </view>
+                </navigator>
                 <view class="app_info_item">
                     <text>关于我们</text>
                     <text>></text>

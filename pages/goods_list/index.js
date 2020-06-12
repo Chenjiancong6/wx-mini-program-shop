@@ -51,7 +51,8 @@ Page({
      */
     onLoad: function (options) {
         //获取分类商品点击后对应的商品列表
-        this.queryParams.cid = options.cid;
+        this.queryParams.cid = options.cid || "";
+        this.queryParams.query = options.query || "";
         this.getGoodsList();
     },
 

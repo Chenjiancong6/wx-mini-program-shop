@@ -1,0 +1,17 @@
+.upImg {
+    width: 90rpx;
+    height: 90rpx;
+    position: relative;
+}
+
+.upImg image {
+    height: 100%;
+    width: 100%;
+    border-radius: 15rpx;
+}
+
+.upImg icon {
+    position: absolute;
+    right: -15rpx;
+    top: -15rpx;
+}

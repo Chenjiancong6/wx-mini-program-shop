@@ -112,8 +112,8 @@ page {
     /* 把两边左右分开*/
     border-bottom: 1px solid #ccc;
     padding: 20rpx;
-
 }
+
 
 .app_info_item .app_contact {
     width: 120rpx;
