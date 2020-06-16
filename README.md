@@ -13,8 +13,8 @@
 
 ## 项目展示：
 
-![无法显示图片](https://github.com/Chenjiancong6/wx-mini-program-shop/raw/master/icons/github_show/1.png)
+![无法显示图片](https://ae01.alicdn.com/kf/He6498cf651cd4a0c935486c33cc3669cB.jpg)
 
-![无法显示图片](https://github.com/Chenjiancong6/wx-mini-program-shop/raw/master/icons/github_show/2.png)
+![无法显示图片](https://ae01.alicdn.com/kf/Haeaa58ab23fc4bb7bd9038ca220c9e4cL.jpg)
 
-![无法显示图片](https://github.com/Chenjiancong6/wx-mini-program-shop/raw/master/icons/github_show/3.png)
+![无法显示图片](https://ae01.alicdn.com/kf/H26438802eb064ba98fc6581de23ecfbbS.jpg)
