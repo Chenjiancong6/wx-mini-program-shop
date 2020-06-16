@@ -13,4 +13,19 @@
 
 ## 项目展示：
 
-![无法显示啊](https://github.com/Chenjiancong6/wx-mini-program-shop/raw/master/icons/my.png)
+![无法显示图片](https://github.com/Chenjiancong6/wx-mini-program-shop/raw/master/icons/github_show/1.png)
+
+![无法显示图片](https://github.com/Chenjiancong6/wx-mini-program-shop/raw/master/icons/github_show/2.png)
+
+![无法显示图片](https://github.com/Chenjiancong6/wx-mini-program-shop/raw/master/icons/github_show/3.png)
+
+![无法显示图片](https://github.com/Chenjiancong6/wx-mini-program-shop/raw/master/icons/github_show/4.png)
+
+![无法显示图片](https://github.com/Chenjiancong6/wx-mini-program-shop/raw/master/icons/github_show/5.png)
+
+![无法显示图片](https://github.com/Chenjiancong6/wx-mini-program-shop/raw/master/icons/github_show/6.png)
+
+![无法显示图片](https://github.com/Chenjiancong6/wx-mini-program-shop/raw/master/icons/github_show/7.png)
+
+![无法显示图片](https://github.com/Chenjiancong6/wx-mini-program-shop/raw/master/icons/github_show/8.png)
+
